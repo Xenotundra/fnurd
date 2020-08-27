@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<elements>
+
+
+-<info>
+
+<name>Krell</name>
+
+</info>
+
+
+-<element name="Krell" id="ID_RACE_KRELL" source="Custom" type="Race">
+
+
+-<description>
+
+<p class="flavor">wip</p>
+
+<h4>wip</h4>
+
+<p>wip</p>
+
+<h4>wip</h4>
+
+<p>wip</p>
+
+<p class="indent">wip</p>
+
+<h4>KRELL NAMES</h4>
+
+<p>wip</p>
+
+<h4>KRELL TRAITS</h4>
+
+<p>Your krell character has some qualities common in most members of their race.</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Ability Score Increase.</em>
+
+</strong>
+Your Intelligence score increases by 2, and one other ability score of your choice increases by 1.
+</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Age.</em>
+
+</strong>
+wip</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Alignment.</em>
+
+</strong>
+wip</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Size.</em>
+
+</strong>
+Krell are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.
+</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Speed.</em>
+
+</strong>
+Your base walking speed is 30 feet, and you have a swimming speed of 30 feet.
+</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Darkvision.</em>
+
+</strong>
+Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+</p>
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Shocking Resistance.</em>
+
+</strong>
+You have resistance to lightning damage.
+</p>
+
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Deep Legacy.</em>
+
+</strong>
+You know the cantrip shocking grasp. Once you reach 3rd level, you can cast the grease spell once per day, requiring no material components. Once you reach 5th level, you can also cast the invisibility spell once on yourself, requiring no material components. You must finish a long rest to cast these spells again with this trait. Intellegence is your spellcasting ability for these spells.
+</p>
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Hold Breath.</em>
+
+</strong>
+You can hold your breath for up to 15 minutes at a time.
+</p>
+
+-<p class="indent">
+
+
+-<strong>
+
+<em>Languages.</em>
+
+</strong>
+You can speak, read, and write Common and Deep Speech.
+</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<setters>
+
+<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric , Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+
+<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+
+<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver, Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+
+<set name="names-format">{{name}} {{surname}}</set>
+
+<set name="height" modifier="2d8">4'9"</set>
+
+<set name="weight" modifier="2d4">110 lb.</set>
+
+</setters>
+
+
+-<rules>
+
+<stat name="intelligence" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK" value="2"/>
+
+<select name="Ability Score Increase (Krell)" type="Racial Trait" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK" number="2" supports="Krell"/>
+
+<stat name="innate speed" value="30" bonus="base"/>
+<stat name="innate speed:swim" value="30" bonus="base"/>
+
+<grant id="ID_SIZE_MEDIUM" type="Size"/>
+
+<grant id="ID_VISION_DARKVISION" type="Vision"/>
+
+<grant id="ID_RACIAL_TRAIT_SHOCKING_RESISTANCE" type="Racial Trait"/>
+
+<grant id="ID_RACIAL_TRAIT_DEEP_LEGACY" type="Racial Trait"/>
+
+<grant id="ID_RACIAL_TRAIT_KRELL_HOLD_BREATH" type="Racial Trait"/>
+
+<grant id="ID_LANGUAGE_COMMON" type="Language"/>
+
+<grant id="ID_LANGUAGE_DEEP_SPEECH" type="Language"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Strength)" id="ID_RACIAL_TRAIT_KRELL_STRENGTH" source="Custom" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Krell</supports>
+
+
+-<description>
+
+<p>Your Strength score increases by 1.</p>
+
+</description>
+
+
+-<rules>
+
+<stat name="strength" value="1"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Dexterity)" id="ID_RACIAL_TRAIT_KRELL_DEXTERITY" source="Custom" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Krell</supports>
+
+
+-<description>
+
+<p>Your Dexterity score increases by 1.</p>
+
+</description>
+
+
+-<rules>
+
+<stat name="dexterity" value="1"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Constitution)" id="ID_RACIAL_TRAIT_KRELL_CONSTITUTION" source="Custom" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Krell</supports>
+
+
+-<description>
+
+<p>Your Constitution score increases by 1.</p>
+
+</description>
+
+
+-<rules>
+
+<stat name="constitution" value="1"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Wisdom)" id="ID_RACIAL_TRAIT_KRELL_WISDOM" source="Custom" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Krell</supports>
+
+
+-<description>
+
+<p>Your Wisdom score increases by 1.</p>
+
+</description>
+
+
+-<rules>
+
+<stat name="wisdom" value="1"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Charisma)" id="ID_RACIAL_TRAIT_KRELL_CHARISMA" source="custom" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Krell</supports>
+
+
+-<description>
+
+<p>Your Intelligence score increases by 1.</p>
+
+</description>
+
+
+-<rules>
+
+<stat name="intelligence" value="1"/>
+
+</rules>
+
+
+</element>
+
+
+-<element name="Shocking Resistance" id="ID_RACIAL_TRAIT_SHOCKING_RESISTANCE" source="Player’s Handbook" type="Racial Trait">
+
+
+-<description>
+
+<p>You have resistance to lightning damage.</p>
+
+</description>
+
+
+-<sheet>
+
+<description>You have resistance to lightning damage.</description>
+
+</sheet>
+
+
+-<rules>
+
+<grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" type="Condition"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Infernal Legacy" id="ID_RACIAL_TRAIT_DEEP_LEGACY" source="Player’s Handbook" type="Racial Trait">
+
+
+-<description>
+
+<p>You know the shocking grasp cantrip. When you reach 3rd level, you can cast the grease spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the invisibility spell once with this trait and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
+
+</description>
+
+
+-<sheet>
+
+<description>You know the shocking grasp cantrip. (Intelligence)</description>
+
+<description level="3">You know the shocking grasp cantrip. You can cast the grease spell (1/long rest). (Intelligence)</description>
+
+<description level="5">You know the shocking grasp cantrip. You can cast the grease spell and the invisibility spell (1/long rest). (Intelligence)</description>
+
+</sheet>
+
+
+-<rules>
+
+<grant id="ID_PHB_SPELL_SHOCKING_GRASP" type="Spell"/>
+
+<grant id="ID_PHB_SPELL_GREASE" type="Spell" level="3"/>
+
+<grant id="ID_PHB_SPELL_INVISIBILITY" type="Spell" level="5"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Hold Breath" id="ID_RACIAL_TRAIT_KRELL_HOLD_BREATH" source="Custom" type="Racial Trait">
+
+
+-<description>
+
+<p>You can hold your breath for up to 15 minutes at a time.</p>
+
+</description>
+
+
+-<sheet>
+
+<description>You can hold your breath for up to 15 minutes at a time.</description>
+
+</sheet>
+
+</elements>
