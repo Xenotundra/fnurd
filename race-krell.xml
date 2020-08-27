@@ -9,9 +9,14 @@
 
 -<update version="0.0.1">
 
-<file url="https://raw.githubusercontent.com/Xenotundra/fnurd/master/race-krell.xml"name="race-krell.xml"/>
+<file name="krell.index" url="https://raw.githubusercontent.com/Xenotundra/fnurd/master/krell.index" />
 
 </update>
+-<files>
+
+<file url="https://raw.githubusercontent.com/Xenotundra/fnurd/master/race-krell.xml"name="race-krell.xml"/>
+
+<files
 
 </info>
 
